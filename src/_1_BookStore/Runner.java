@@ -46,9 +46,8 @@ public class Runner {
                 case 4:
                     while (time.isBefore(countDown)) {
                         countDown = countDown.minusSeconds(1);
-                        Thread.sleep(1000);
                         System.out.print("\rPROGRAM TERMINATED IN " + countDown.format(formatter) + "..");
-
+                        Thread.sleep(1000);
                     }
                     return;
             }
